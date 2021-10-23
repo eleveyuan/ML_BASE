@@ -55,3 +55,17 @@ attention:
 1. '-G' points to a source generator, i use mingw
 2. '-D' points what compiler you needed\
 3. '/' don't use '\', could cause a parse error, "Invalid character escape" (fxck these characters)
+
+## GDB debug with cmake
+https://www.gnu.org/software/gdb/documentation/
+
+after we build a project. we must ensure our project is runnable.
+
+added some properties at "CMakeLists.txt"
+``` bash
+SET(CMAKE_BUILD_TYPE "Debug")
+SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
+SET(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
+```
+
+then use gdb debug you program.

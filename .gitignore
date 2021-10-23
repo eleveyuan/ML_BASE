@@ -36,6 +36,8 @@ lib
 
 
 basic_lib/cmakeBase/cmake_example/CMakeFiles
+basic_lib/cmakeBase/cmake_gdb_example/CMakeFiles
 *.log
 *.cmake 
 Makefile
+CMakeCache.txt
