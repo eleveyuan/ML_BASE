@@ -33,3 +33,9 @@
 
 .vscode
 lib
+
+
+basic_lib/cmakeBase/cmake_example/CMakeFiles
+*.log
+*.cmake 
+Makefile
